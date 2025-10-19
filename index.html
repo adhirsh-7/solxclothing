@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solx Clothing - Luxurious, Sustainable Fashion</title>
+    <!-- Bootstrap for professional, responsive design -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts for luxury typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Animate.css for elegant animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff; /* White background for cleanliness */
+            color: #000; /* Black text for sophistication */
+        }
+        header {
+            background: linear-gradient(135deg, #000 0%, #e91e63 100%); /* Black to deep pink gradient for luxury */
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(233, 30, 99, 0.1); /* Subtle pink overlay for depth */
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+            font-family: 'Playfair Display', serif; /* Elegant serif for headings */
+        }
+        nav {
+            background-color: #000; /* Black nav for contrast */
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        nav .navbar-brand, nav .nav-link {
+            color: #fff !important;
+        }
+        nav .nav-link:hover {
+            color: #ffb3ba !important; /* Soft pink on hover */
+        }
+        .product-card {
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            background-color: #fff;
+        }
+        .product-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(233, 30, 99, 0.3); /* Pink shadow for luxury effect */
+        }
+        .btn-primary {
+            background-color: #e91e63; /* Deep pink buttons */
+            border-color: #e91e63;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ffb3ba; /* Softer pink on hover */
+            border-color: #ffb3ba;
+        }
+        .text-primary {
+            color: #e91e63 !important; /* Pink for prices */
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        /* Custom animations for luxury feel */
+        .fade-in {
+            animation: fadeInUp 1.2s ease-out;
+        }
+        .product-card {
+            animation: fadeInUp 1s ease-out;
+        }
+        /* Subtle background pattern for sections */
+        #about, #contact {
+            background: linear-gradient(45deg, #fff 25%, #ffb3ba 25%, #ffb3ba 50%, #fff 50%, #fff 75%, #ffb3ba 75%);
+            background-size: 20px 20px; /* Checkerboard pink-white pattern for subtle luxury */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with luxury animation -->
+    <header class="animate__animated animate__fadeInDown">
+        <div class="container">
+            <h1>Solx Clothing</h1>
+            <p class="lead">Indulge in luxurious, sustainable fashion that defines elegance.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Solx</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 fade-in">
+        <div class="container text-center">
+            <h2 class="fw-bold">About Solx</h2>
+            <p class="lead">Crafted with premium, eco-conscious materials, Solx blends timeless style with modern luxury. Each piece is a statement of sophistication and sustainability.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold fade-in">Our Luxurious Collection</h2>
+            <div class="row">
+                <!-- T-Shirt 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp">
+                        <img src="https://via.placeholder.com/300x300?text=Luxury+T-Shirt" class="card-img-top" alt="Classic Cotton T-Shirt">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Classic Cotton T-Shirt</h5>
+                            <p class="card-text">Ultra-soft, ethically sourced cotton in exquisite cuts.</p>
+                            <p class="text-primary fw-bold fs-5">$25.00</p>
+                            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- T-Shirt 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <img src="https://via.placeholder.com/300x300?text=Graphic+T-Shirt" class="card-img-top" alt="Graphic Print T-Shirt">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Graphic Print T-Shirt</h5>
+                            <p class="card-text">Bold artistry on premium organic fabrics.</p>
+                            <p class="text-primary fw-bold fs-5">$30.00</p>
+                            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- T-Shirt 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <img src="https://via.placeholder.com/300x300?text=Vintage+T-Shirt" class="card-img-top" alt="Vintage Style T-Shirt">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Vintage Style T-Shirt</h5>
+                            <p class="card-text">Retro elegance with sustainable luxury.</p>
+                            <p class="text-primary fw-bold fs-5">$28.00</p>
+                            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Product: Hoodie -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                        <img src="https://via.placeholder.com/300x300?text=Luxury+Hoodie" class="card-img-top" alt="Eco Hoodie">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Eco Hoodie</h5>
+                            <p class="card-text">Warmth and style in recycled luxury materials.</p>
+                            <p class="text-primary fw-bold fs-5">$45.00</p>
+                            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 fade-in">
+        <div class="container text-center">
+            <h2 class="fw-bold">Contact Us</h2>
+            <p class="lead">Elevate your wardrobe with personalized luxury.</p>
+            <p>Email: info@solx.com | Instagram: @solxclothing | Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Solx Clothing. All rights reserved. Crafted for luxury and sustainability.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
